@@ -1,0 +1,175 @@
+* {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #f4f7fc;
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            padding: 2rem 1rem;
+            color: #1e2a3e;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 2rem;
+            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0b3b3f 0%, #1c5a5e 100%);
+            padding: 2rem;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .header h1 span {
+            background: #ffb74d;
+            font-size: 1rem;
+            padding: 4px 12px;
+            border-radius: 40px;
+            color: #1e2a3e;
+        }
+
+        .header p {
+            margin-top: 12px;
+            opacity: 0.85;
+        }
+
+        .content {
+            padding: 2rem;
+        }
+
+        .card-panel {
+            background: #fefefe;
+            border-radius: 1.5rem;
+            border: 1px solid #e2edf2;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            border-left: 5px solid #1c5a5e;
+            padding-left: 1rem;
+            color: #0f3b3f;
+        }
+
+        .param-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .param-group {
+            flex: 1;
+            min-width: 160px;
+        }
+
+        .param-group label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            color: #2c6e6e;
+            margin-bottom: 6px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 16px;
+            border: 1px solid #cbdde4;
+            font-size: 0.95rem;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #1c5a5e;
+            box-shadow: 0 0 0 3px rgba(28,90,94,0.2);
+        }
+
+        button {
+            background: #1c5a5e;
+            border: none;
+            color: white;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 40px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        button.whatsapp {
+            background: #25D366;
+        }
+
+        button.whatsapp:hover {
+            background: #20b859;
+        }
+
+        .shirt-table {
+            overflow-x: auto;
+            margin-top: 1rem;
+        }
+
+        .shirt-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .shirt-table th, .shirt-table td {
+            padding: 12px 8px;
+            border-bottom: 1px solid #e2edf2;
+            text-align: left;
+        }
+
+        .link-area {
+            background: #f0f6fa;
+            border-radius: 1rem;
+            padding: 1.2rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .link-url {
+            flex: 3;
+            background: white;
+            border-radius: 60px;
+            padding: 10px 16px;
+            font-family: monospace;
+            font-size: 0.85rem;
+            word-break: break-all;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+            justify-content: flex-end;
+        }
+
+        @media (max-width: 700px) {
+            .content { padding: 1rem; }
+        }

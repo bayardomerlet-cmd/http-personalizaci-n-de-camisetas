@@ -1,0 +1,88 @@
+html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizador de Camisetas · Retail con WhatsApp</title>
+    <link rel="stylesheet" href="trabajo.css"
+     <style>
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>🧢 Personalize tu pedido por unidad o por mayor <span>por set</span></h1>
+        <p>para mayor informacion contatenos y envía tu solicitud por WhatsApp al 83573260 & 85910427.</p>
+    </div>
+    <div class="content">
+        <!-- Configuración general -->
+        <div class="card-panel">
+            <div class="card-title">📦 Elije tu set o unidad segun requieras</div>
+            <div class="param-row">
+                <div class="param-group">
+                 <label>👕 Camisetas por Unidades</label>
+             <select id="setSizeSelect">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3" selected>3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+             </select>
+           </div>
+            
+                <div class="param-group">
+                    <label>📦 Cantidad por Docenas a Mas</label>
+                    <input type="number" id="setsQuantity" min="1" value="1" step="1">
+                </div>
+                <div class="param-group">
+                    <label>🎨 Estampado / diseño</label>
+                    <input type="text" id="designInfo" placeholder="Elija su logo frontal">
+                </div>
+            </div>
+            <div class="param-row">
+                <div class="param-group">
+                    <label>🧑‍💼 Solicitante</label>
+                    <input type="text" id="customerName" placeholder="Nombre o tienda">
+                </div>
+                <div class="param-group">
+                    <label>📧 Email contacto</label>
+                    <input type="email" id="customerEmail" placeholder="correo@ejemplo.com">
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabla de personalización por camiseta (se llena con JS) -->
+        <div class="card-panel">
+            <div class="card-title">🎨 Personaliza cada camiseta </div>
+            <div class="shirt-table" id="shirtTableContainer"></div>
+            <div class="footer-note" style="margin-top:12px; font-size:0.75rem;">⚡ Cada set tiene la misma composición.</div>
+        </div>
+
+        <!-- Enlace personalizado y WhatsApp -->
+        <div class="card-panel">
+            <div class="card-title">🔗 Enlace personalizado y envío</div>
+            <div class="link-area">
+                <div class="link-url" id="dynamicLinkDisplay">https://...</div>
+                <button id="copyLinkBtn">📋 Copiar enlace</button>
+                <button id="refreshLinkBtn">🔄 Generar nuevo enlace</button>
+            </div>
+            <div class="actions">
+                <button id="whatsappBtn" class="whatsapp">💬 Enviar pedido por WhatsApp</button>
+                <button id="copySummaryBtn">📄 Copiar resumen</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
+
+
