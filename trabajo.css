@@ -10,7 +10,27 @@
             padding: 2rem 1rem;
             color: #1e2a3e;
         }
+.precio-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Pone el texto arriba y el precio abajo */
+    align-items: center;
+    min-width: 120px;       /* Ancho mínimo para que se vean uniformes */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
 
+.precio-card span {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.precio-card strong {
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
         .container {
             max-width: 1280px;
             margin: 0 auto;
