@@ -195,7 +195,20 @@ whatsappBtn.addEventListener('click', sendWhatsApp);
 
 // Iniciar
 loadStateFromURL();
-
+function enviarPedido() {
+    const mensaje = generateOrderSummary(); // Llama a la función de arriba
+    const telefono = "505 8357260"; // Reemplaza con tu número real
+    
+    // Asegúrate de usar backticks ` para envolver la URL completa
+    const url = "https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}";
+    
+    window.open(url, '_blank');
+    
+    // Limpia el carrito
+    reiniciarCarrito();
+}
+// Variable para llevar la cuenta de prendas
+let totalPrendas = 0;
 
 
 
