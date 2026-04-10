@@ -197,7 +197,7 @@ whatsappBtn.addEventListener('click', sendWhatsApp);
 loadStateFromURL();
 function enviarPedido() {
     const mensaje = generateOrderSummary(); // Llama a la función de arriba
-    const telefono = "505 8357260"; // Reemplaza con tu número real
+    const telefono = "+5058357260"; // Reemplaza con tu número real
     
     // Asegúrate de usar backticks ` para envolver la URL completa
     const url = "https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}";
