@@ -193,3 +193,38 @@
         @media (max-width: 700px) {
             .content { padding: 1rem; }
         }
+        .carrito-flotante {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.btn-carrito {
+    background-color: white; /* El naranja de tu diseño */
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 50px; /* Estilo redondeado como tus botones */
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-carrito:hover {
+    background-color: #00d351; /* Un naranja más oscuro al pasar el mouse */
+    transform: scale(1.05);
+}
+
+.contador {
+    background-color: #2ecc71; /* Verde como tus íconos de camisa */
+    color: white;
+    padding: 2px 8px;
+    border-radius: 50%;
+    font-size: 0.9em;
+}
